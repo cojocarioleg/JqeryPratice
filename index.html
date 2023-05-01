@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="imgHolder" id="imgHolder">
+      <img src="img/black.jpeg" alt="Auto" />
+    </div>
+    <div class="model-summary">
+      <div class="model-name">Hundai Solaris</div>
+      <div class="model-specs" id="modelSpecs">1.6 - 6AT Comfort</div>
+      <div class="model-price" id="modelPrice"></div>
+      <div class="model-price" id="modelPriceMDL"></div>
+      <div class="model-price" id="modelPriceEUR"></div>
+      <div class="button" id="">Order</div>
+    </div>
+    <form action="" id="autoForm">
+      <h2>Setings Auto</h2>
+      <div class="row">
+        <div class="col-1-of-3">
+          <h4>Motor</h4>
+          <div class="form-block">
+            <input
+              type="radio"
+              name="engine"
+              id="engine1400"
+              value="6004900"
+              checked
+            />
+            <label for="engine1400"> 1.4l (100 l.s)</label>
+          </div>
+          <div class="form-block">
+            <input
+              type="radio"
+              name="engine"
+              id="engine1600"
+              value="800900"
+              checked
+            />
+            <label for="engine1600"> 1.6l (123 l.s)</label>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <h4>Gearbox</h4>
+          <div class="form-block">
+            <input
+              type="radio"
+              name="transmission"
+              id="transmission6MT"
+              value="0"
+              checked
+            />
+            <label for="transmission6MT"> 1.4l (100 l.s)</label>
+          </div>
+          <div class="form-block">
+            <input
+              type="radio"
+              name="transmission"
+              id="transmission6AT"
+              value="150500"
+              checked
+            />
+            <label for="transmission6AT"> 1.6l (123 l.s)</label>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <h4>Packet</h4>
+          <div class="form-block">
+            <input
+              type="radio"
+              name="package"
+              id="packageActive"
+              value="0"
+              checked
+            />
+            <label for="packageActive">Active</label>
+          </div>
+          <div class="form-block">
+            <input
+              type="radio"
+              name="package"
+              id="packageActivePlus"
+              value="12500"
+              checked
+            />
+            <label for="packageActivePlus">Active Plus</label>
+          </div>
+          <div class="form-block">
+            <input
+              type="radio"
+              name="package"
+              id="packageComfort"
+              value="13000"
+              checked
+            />
+            <label for="packageComfort">Comfort</label>
+          </div>
+        </div>
+      </div>
+
+      <h4>Colors</h4>
+      <div class="form-block">
+        <div class="colorsSelector" id="colorsSelector">
+          <div class="colorItem colorBlue" data-img-path="img/blue.jpeg"></div>
+          <div
+            class="colorItem colorWhite"
+            data-img-path="img/white.jpeg"
+          ></div>
+          <div class="colorItem colorRed" data-img-path="img/red.jpeg"></div>
+          <div
+            class="colorItem colorWhitePutre"
+            data-img-path="img/WhitePutre.jpeg"
+          ></div>
+          <div
+            class="colorItem colorOrange"
+            data-img-path="img/Orange.jpeg"
+          ></div>
+          <div
+            class="colorItem colorGraphite"
+            data-img-path="img/Graphite.jpeg"
+          ></div>
+        </div>
+      </div>
+    </form>
+   
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>
